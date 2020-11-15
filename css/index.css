@@ -21,6 +21,16 @@ button{
     padding: 0.45rem 1rem;
     font-size: 0.8rem;
     font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid black;
+    color: #00cdce;
+    background-color: black;
+}
+
+h4{
+    padding: 2rem 0;
+    font-size: 2rem;
 }
 
 /* HEADER AND CAROUSEL */
@@ -103,15 +113,8 @@ button{
     font-size: 0.8rem;
 }
 
-.intro h4{
-    font-size: 2rem;
-    padding-bottom: 2rem;
-}
-
 .intro__content{
     display: flex;
-    
-    
 }
 
 .intro__item i:hover{
@@ -217,14 +220,253 @@ button{
     margin-bottom: 0.8rem;
 }
 
-.blog__text button{
-    background-color: black;
-    color: #00cdce;
-    border: black;
-}
-
 .blog__text button:hover{
+    border-color: black;
     color: black;
     background-color: white;
-    border: 1px solid black;
+}
+
+/* GET MORE */
+.getMore__content{
+    display: flex;
+    text-align: center;
+}
+
+.getMore__content .getMore__item:last-child{
+    background-color: #00cdce;
+}
+
+.getMore__item img{
+    width: 35rem;
+    height: 100%;
+}
+
+.getMore__item h4{
+    font-size: 2.3rem;
+    padding: 1.7rem 0 1rem;
+}
+
+.getMore__item p{
+    color: white;
+    margin: 0.5rem 12rem 1.7rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+.getMore__item button:hover{
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+/* PORTFOLIO */
+.portfolio{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.portfolio__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolio__item img{
+    width: 100%;
+}
+
+/* SUBSCRIBE */
+.subscribe{
+    text-align: center;
+    background-color: #00cdce;
+    height: 18rem;
+}
+
+.subscribe__content{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.subscribe__content p{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.subscribe__content input{
+    width: 30rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.subscribe__content button{
+    margin-top: 1rem;
+    color: white;
+    width: 7rem;
+}
+
+.subscribe__content button:hover{
+    background-color: #ff9a33;
+    color: black;
+    border-color: #ff9a33;
+}
+
+
+/* AGENTS */
+.agents{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.agents__content{
+    display: flex;
+    justify-content: center;
+}
+
+.agents__item{
+    padding: 1rem;
+}
+
+.agents__item img{
+    width: 100%;
+    display: block;
+}
+
+.agents__text{
+    background-color: #363636;
+}
+
+.agents__text h3{
+    color: #00cdce;
+    font-size: 0.9rem;
+    padding: 0.7rem 0 0.3rem;
+}
+
+.agents__text p{
+    color: white;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+.agents__icons{
+    padding-bottom: 1rem;
+}
+
+.agents__icons i{
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.agents__icons i:hover{
+    border-color: #00cdce;
+    color: #00cdce;
+}
+
+
+/* CONTACT */
+.contact{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contact__map{
+    background-color: #7f7777;
+}
+
+.contact__map iframe{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form__content{
+    padding-top: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem 1.5rem;
+}
+
+.form__content textarea{
+    grid-column: 2 / 3;
+    grid-row: 1 / span 3;
+}
+
+.form__content input, .form__content button, .footer__content textarea{
+    border-width: 0;
+    outline: none;
+    border-bottom: 4px solid #7f7777;
+    padding-left: 0.5rem;
+    background-color: #efefef;
+    font-size: 0.8rem;
+}
+
+.form__content textarea{
+    padding-top: 0.5rem;
+    resize: none;
+}
+
+.form__content button{
+    color: white;
+    background-color: black;
+    border-width: 0;
+}
+
+.form__content button:hover{
+    color: black;
+    background-color: #ff9a33;
+}
+
+/* FOOTER */
+footer {
+    padding: 4.5rem 0;
+    background-color: #00CDCE;
+}
+
+.footer__content {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.footer__content p span {
+    color: red;
+}
+
+.footer__social i {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid white;
+
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+
+    margin-left: 2rem ;
+}
+
+
+/* BACK_TO_TOP */
+.backtotop {
+    position: fixed;
+    bottom: 5.5rem;
+    right: 3rem;
 }
